@@ -22,12 +22,12 @@ const client = new Client({
 const CATEGORY_ID = '1518764799192727594';
 
 // ✏️ EDITE AQUI SUA META (APARECE PRA TODO MUNDO)
-const META_TEXTO = **1. Gatilho 0/2000**
-**2. Corpo de arma 0/2000**
-**3. Carregador de SMG 0/2000**
-**4. Carregador de pistola 0/2000**
-**5. Alça de mira de SMG 0/2000**
-**6. Alça de mira de pistola 0/2000**
+const META_TEXTO = 1. Gatilho 0/2000
+2. Corpo de arma 0/2000
+3. Carregador de SMG 0/2000
+4. Carregador de pistola 0/2000
+5. Alça de mira de SMG 0/2000
+6. Alça de mira de pistola 0/2000
 
 📊 **Meta de Farm**
 
