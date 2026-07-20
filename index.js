@@ -19,20 +19,23 @@ const client = new Client({
 });
 
 // ⚙ CONFIG
-const CATEGORY_ID = '1498173550807486501';
+const CATEGORY_ID = '1518764799192727594';
 
 // ✏️ EDITE AQUI SUA META (APARECE PRA TODO MUNDO)
-const META_TEXTO = `Meta MORADOR > 250k limpo
-Meta MEMBRO  > 200K LIMPO
-Meta TRAFICANTE > 400K LIMPO / 450K SUJO
+const META_TEXTO = **1. Gatilho 0/2000**
+**2. Corpo de arma 0/2000**
+**3. Carregador de SMG 0/2000**
+**4. Carregador de pistola 0/2000**
+**5. Alça de mira de SMG 0/2000**
+**6. Alça de mira de pistola 0/2000**
 
 📊 **Meta de Farm**
 
 📅 Frequência: Semanal  
-💰 Tipo: Dinheiro   
+💰 Tipo: 2k de cada farm acima   
 
 📝 Observação:
-Dinheiro Sujo/Limpo
+Envie VIDEOS/FOTOS como prova de sua entrega do farm 
 `;
 
 // 🚀 COMANDO
@@ -60,10 +63,10 @@ client.on('interactionCreate', async (interaction) => {
     if (interaction.commandName === 'farm') {
 
       const embed = new EmbedBuilder()
-        .setColor('#00ff88')
+        .setColor('#00BFFF')
         .setTitle('🌿 Painel de Farm')
         .setDescription('Clique no botão abaixo para abrir sua pasta de farm.')
-        .setImage('https://media.discordapp.net/attachments/1498166599495192727/1498180606050172998/file_0000000072bc720eb5a5ed4b8ce20440.png');
+        .setImage('https://media.discordapp.net/attachments/1498166599495192727/1528121556503498853/file_00000000a3c8820e994ae9f55913f43c.png?ex=6a5e771a&is=6a5d259a&hm=cbc4922eac96b83ae16d2ff28e1f182353bcc549161eadd641e6ccaaefc4e653&=&format=webp&quality=lossless&width=1521&height=856');
 
       const row = new ActionRowBuilder().addComponents(
         new ButtonBuilder()
@@ -101,9 +104,9 @@ client.on('interactionCreate', async (interaction) => {
     });
 
     const embed = new EmbedBuilder()
-      .setColor('#00ff88')
+      .setColor('#00BFFF')
       .setTitle('📁 Pasta de Farm')
-      .setImage('https://media.discordapp.net/attachments/1498166599495192727/1498180606050172998/file_0000000072bc720eb5a5ed4b8ce20440.png')
+      .setImage('https://media.discordapp.net/attachments/1498166599495192727/1528121556503498853/file_00000000a3c8820e994ae9f55913f43c.png?ex=6a5e771a&is=6a5d259a&hm=cbc4922eac96b83ae16d2ff28e1f182353bcc549161eadd641e6ccaaefc4e653&=&format=webp&quality=lossless&width=1521&height=856')
       .setDescription(`👋 ${interaction.user}, essa é sua pasta de farm!\n\nUse os botões abaixo:`)
       .setThumbnail(interaction.user.displayAvatarURL())
       .setFooter({ text: 'Boa sorte no farm 🚀' });
@@ -132,7 +135,7 @@ client.on('interactionCreate', async (interaction) => {
   if (interaction.isButton() && interaction.customId === 'ver_metas') {
 
     const embed = new EmbedBuilder()
-      .setColor('#0099ff')
+      .setColor('#00BFFF')
       .setTitle('📊 Metas de Farm')
       .setDescription(META_TEXTO)
       .setFooter({ text: 'Sistema de Farm' });
