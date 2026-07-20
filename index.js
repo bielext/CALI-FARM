@@ -22,22 +22,22 @@ const client = new Client({
 const CATEGORY_ID = '1518764799192727594';
 
 // ✏️ EDITE AQUI SUA META (APARECE PRA TODO MUNDO)
-const META_TEXTO = 1. Gatilho 0/2000
-2. Corpo de arma 0/2000
-3. Carregador de SMG 0/2000
-4. Carregador de pistola 0/2000
-5. Alça de mira de SMG 0/2000
-6. Alça de mira de pistola 0/2000
-
+const META_TEXTO = `
 📊 **Meta de Farm**
 
-📅 Frequência: Semanal  
-💰 Tipo: 2k de cada farm acima   
+**1. Gatilho 0/2000**
+**2. Corpo de arma 0/2000**
+**3. Carregador de SMG 0/2000**
+**4. Carregador de pistola 0/2000**
+**5. Alça de mira de SMG 0/2000**
+**6. Alça de mira de pistola 0/2000**
 
-📝 Observação:
-Envie VIDEOS/FOTOS como prova de sua entrega do farm 
+📅 **Frequência:** Semanal
+💰 **Tipo:** 2k de cada farm acima
+
+📝 **Observação:**
+Envie **vídeos/fotos** como prova de sua entrega do farm.
 `;
-
 // 🚀 COMANDO
 const commands = [
   new SlashCommandBuilder()
@@ -51,9 +51,12 @@ client.once('ready', async () => {
   console.log(`Logado como ${client.user.tag}`);
 
   await rest.put(
-    Routes.applicationGuildCommands(client.user.id, '1498173549486280846'),
-    { body: commands }
-  );
+  Routes.applicationGuildCommands(
+    process.env.CLIENT_ID,
+    process.env.GUILD_ID
+  ),
+  { body: commands }
+);
 });
 
 // 🎯 INTERAÇÕES
