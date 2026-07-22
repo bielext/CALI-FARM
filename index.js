@@ -25,15 +25,12 @@ const CATEGORY_ID = '1518764799192727594';
 const META_TEXTO = `
 📊 **Meta de Farm**
 
-**1. Gatilho 0/2000**
-**2. Corpo de arma 0/2000**
-**3. Carregador de SMG 0/2000**
-**4. Carregador de pistola 0/2000**
-**5. Alça de mira de SMG 0/2000**
-**6. Alça de mira de pistola 0/2000**
+Dinheiro ou sujo ou limpo:
+ Sujo: 300k 
+ Limpo: 200k 
 
 📅 **Frequência:** Semanal
-💰 **Tipo:** 2k de cada farm acima
+💰 **Tipo:** Dinheiro
 
 📝 **Observação:**
 Envie **vídeos/fotos** como prova de sua entrega do farm.
@@ -91,7 +88,7 @@ client.on('interactionCreate', async (interaction) => {
       .replace(/ /g, '-');
 
     const canal = await interaction.guild.channels.create({
-      name: `farm-${nome}`,
+      name: nome,
       type: ChannelType.GuildText,
       parent: CATEGORY_ID,
       permissionOverwrites: [
