@@ -26,8 +26,8 @@ const META_TEXTO = `
 📊 **Meta de Farm**
 
 Dinheiro ou sujo ou limpo:
- Sujo: 300k 
- Limpo: 200k 
+ Sujo: 400k 
+ Limpo: 300k 
 
 📅 **Frequência:** Semanal
 💰 **Tipo:** Dinheiro
