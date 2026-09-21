@@ -25,11 +25,13 @@ const CATEGORY_ID = '1518764799192727594';
 const META_TEXTO = `
 📊 **Meta de Farm**
 
-Dinheiro ou sujo ou limpo:
- Sujo: 400k 
- Limpo: 300k 
+Dinheiro limpo: 
+TRAFICANTE - 300K
+SOLDADO - 400K
+MEMBRO - 500K
+MORADOR - 600K
 
-📅 **Frequência:** Semanal
+📅 **Frequência:** INICIO SEGUNDA FEIRA DATA DE ENTREGA ATÉ DOMINGO
 💰 **Tipo:** Dinheiro
 
 📝 **Observação:**
