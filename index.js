@@ -23,8 +23,6 @@ const CATEGORY_ID = '1518764799192727594';
 
 // ✏️ EDITE AQUI SUA META (APARECE PRA TODO MUNDO)
 const META_TEXTO = `
-📊 **Meta de Farm**
-
 Dinheiro limpo: 
 TRAFICANTE - 300K
 SOLDADO - 400K
@@ -138,7 +136,7 @@ client.on('interactionCreate', async (interaction) => {
 
     const embed = new EmbedBuilder()
       .setColor('#00BFFF')
-      .setTitle('📊 Metas de Farm')
+      .setTitle('📊 Meta de Farm')
       .setDescription(META_TEXTO)
       .setFooter({ text: 'Sistema de Farm' });
 
